@@ -5,38 +5,92 @@ body {
 #portfolio, #bg-banner, #about, #contact, .footer-top, .footer-bottom{
     padding-bottom:4rem;
 }
+:root {
+    --height-header: 4rem;
+    --line-space: 1.5rem;
+}
 /* HEADER */
 header {
     width:100%;
-    height: 4rem;
+    height: var(--height-header);
     background-color: #2c3e50;
     color:white;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
 }
 header [class^="col"] {
-    height: 4rem;
-    background-color: purple;
+    line-height: var(--height-header);
+    
 }
-header .col-3:nth-child(2) {
-    background-color: brown;
-    display: none;
+header .brand {
+    font-size: 1.2rem;
+    line-height: 4rem;
+    text-align: left;
 }
-.box-mobile {
-    background-color: lime;
-    height: 100%;
+header ul {
+    list-style-type: none;
+    text-align: right;
+    justify-content: flex-end;
+}
+header .mobile {
+    cursor: pointer;
+    /* border: 2px solid white;
+    border-radius: 10px; */
+
+}
+header a {
+    color:inherit;
+    text-decoration: none;
+    margin-right:15px;
+}
+header a:hover {
+    color:rgb(253, 201, 59);
+    font-size: 1.2rem;
 }
 /* BANNER */
 #banner {
-    height: 20rem;
     background-color: #1abc9c;
+    margin-top: var(--height-header);
+    color:white;
 }
-#banner .container > div {
-    padding: 5rem 0;
+.avatar img {
+    padding: 4rem 0 var(--line-space);
+    max-width: 300px;
 }
 .intro {
-    padding: 2rem 0;
+    padding: var(--line-space);
+}
+.star i {
+    font-size: 1.5rem;
+}
+#banner h1 {
+    padding-bottom: var(--line-space);
+}
+.star::after {
+    content:"";
+    height:5px;
+    width:100%;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.star::before {
+    content:"";
+    height:5px;
+    width:100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-right:5px;
+}
+#banner h2 {
+    font-size: 1.2rem;
+    padding: var(--line-space) 0;
 }
 /* PORTFOLIO */
-.box {
+ main .box {
     /* DEBUG */
     background-color: yellow;
     height: 8rem;
@@ -60,10 +114,5 @@ header .col-3:nth-child(2) {
 }
 /* QUERIES */
 @media screen and (min-width:576px) {
-    .mobile {
-        display: none;
-    }
-    header .col-3:nth-child(2) {
-        display:block;
-    }
+
 }

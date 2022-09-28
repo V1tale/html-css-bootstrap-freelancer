@@ -18,20 +18,28 @@
         <div id="wrapper">
             <div class="container container-md container-lg">
                 <div class="row justify-content-between">
-                    <div class="col-3">
+                    <div class="col-5">
+                        <div class="brand">
+                            <a href="#banner">Start Bootstrap</a>
+
+                        </div>
+                    </div>
+                    <!-- BIGGER DEVICES -->
+                    <div class="col-5 d-none d-sm-block">
                         <div class="box">
-
+                            <ul class="d-flex">
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contacts</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="box"></div>
-
+                    <!-- /BIGGER DEVICES -->
+                    <!-- SMALL DEVICES -->
+                    <div class="col-1 mobile d-sm-none">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
-                    <div class="col-3 mobile">
-                        <div class="box-mobile">
-
-                        </div>
-                    </div>
+                    <!-- /SMALL DEVICES -->
                 </div>
             </div>
         </div>
@@ -42,10 +50,14 @@
         <section id="banner">
             <div class="container">
                 <div>
-                    <h2>immagine</h2>
-                    <h2>titolo</h2>
-                    <h2>simbolo</h2>
-                    <h2>frase</h2>
+                    <div class="avatar col-6 offset-3">
+                        <img src="img/avatar.svg" alt="">
+                    </div>
+                    <h1>START BOOTSTRAP</h1>
+                    <div class="star col-6 offset-3 d-flex align-items-center">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h2>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h2>
                 </div>
             </div>      
         </section>
