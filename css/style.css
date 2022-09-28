@@ -1,19 +1,20 @@
 
-body {
-    text-align: center;
-}
 html {
     scroll-padding: var(--height-header);
 }
 img {
     max-width: 100%;
 }
-#portfolio, #bg-banner, #about, #contact, .footer-top, .footer-bottom{
-    padding-bottom:4rem;
+#portfolio, #banner, #about {
+    text-align: center;
+}
+#portfolio, #banner, #about, #contacts {
+    padding-bottom: var(--line-space);
 }
 :root {
     --height-header: 4rem;
     --line-space: 1.5rem;
+    --primary-color: #1abc9c;
 }
 /* HEADER */
 header {
@@ -57,7 +58,7 @@ header a:hover {
 }
 /* BANNER */
 #banner {
-    background-color: #1abc9c;
+    background-color: var(--primary-color);
     margin-top: var(--height-header);
     color:white;
 }
@@ -106,9 +107,10 @@ header a:hover {
 .black::before {
    background-color: black;
 }
+
 /* ABOUT */
 #about {
-    background-color: #1abc9c;
+    background-color: var(--primary-color);
     color:white
 }
 #about h2 {
@@ -125,7 +127,28 @@ header a:hover {
     margin: 5px;
 }
 /* CONTACT */
-#contact .row {
+#contacts {
+    padding: var(--line-space) 0;
+}
+#contacts h2 {
+    text-align: center;
+}
+#contacts .row {
+    text-align: left;
+}
+#contacts input {
+    border-top:0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    margin: 5px;
+}
+textarea {
+    margin-bottom:var(--line-space);
+}
+#contacts button {
+    background-color: var(--primary-color);
+    border: 0px;
     text-align: left;
 }
 /* FOOTER */
