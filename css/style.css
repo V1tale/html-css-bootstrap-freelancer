@@ -5,7 +5,7 @@ html {
 img {
     max-width: 100%;
 }
-#portfolio, #banner, #about {
+#portfolio, #banner, #about, footer {
     text-align: center;
 }
 #portfolio, #banner, #about, #contacts {
@@ -152,14 +152,36 @@ textarea {
     text-align: left;
 }
 /* FOOTER */
+footer {
+    color:white;
+}
 .footer-top {
     background-color: #3a546d;
+    padding: var(--line-space) 0;
+}
+
+footer .border {
+    width:2rem;
+    height:2rem;
+    margin: 5px;
+}
+footer h2 {
+    font-size: 1.4rem;
+}
+footer h3 {
+    font-size: 1.2rem;
+}
+footer span, p {
+    font-size: 1rem;
+}
+.border i {
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.credits :last-child {
+    color:rgb(87, 216, 87)
 }
 .footer-bottom {
     background-color: #2c3e50;
-    height: 4rem;
-}
-/* QUERIES */
-@media screen and (min-width:576px) {
-
+    padding: 2rem 0 4rem;;
 }
