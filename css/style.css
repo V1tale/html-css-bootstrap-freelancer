@@ -5,6 +5,10 @@ html {
 img {
     max-width: 100%;
 }
+.wrapper {
+    max-width: 70%;
+    margin: auto;
+}
 #portfolio, #banner, #about, footer {
     text-align: center;
 }
