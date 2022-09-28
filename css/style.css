@@ -62,7 +62,7 @@ header a:hover {
     color:white;
 }
 .avatar img {
-    padding: 4rem 0 var(--line-space);
+    padding: var(--line-space) 0;
     max-width: 300px;
 }
 .intro {
@@ -77,7 +77,7 @@ header a:hover {
 .star::after {
     content:"";
     height:5px;
-    width:50%;
+    width:100%;
     border-radius: 5px;
     display: inline-block;
     margin-left: 5px;
@@ -85,14 +85,14 @@ header a:hover {
 .star::before {
     content:"";
     height:5px;
-    width:50%;
+    width:100%;
     border-radius: 5px;
     margin-right:5px;
 }
-#banner .star::after {
+.white::after {
     background-color: white;
 }
-#banner .star::before {
+.white::before {
     background-color: white;
 }
 #banner h2 {
@@ -100,17 +100,30 @@ header a:hover {
     padding: var(--line-space) 0;
 }
 /* PORTFOLIO */
- #portfolio .star::after {
-    background-color: black;
- }
- #portfolio .star::before {
-    background-color: black;
- }
+.black::after {
+   background-color: black;
+}
+.black::before {
+   background-color: black;
+}
 /* ABOUT */
 #about {
     background-color: #1abc9c;
+    color:white
 }
-
+#about h2 {
+    padding-top: var(--line-space);
+}
+#about .star {
+    padding: var(--line-space) 0;
+}
+#about button {
+    color:white;
+    border-color: white;
+}
+#about button i {
+    margin: 5px;
+}
 /* CONTACT */
 #contact .row {
     text-align: left;
