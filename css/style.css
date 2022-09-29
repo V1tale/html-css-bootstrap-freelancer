@@ -47,9 +47,6 @@ header ul {
 }
 header .mobile {
     cursor: pointer;
-    /* border: 2px solid white;
-    border-radius: 10px; */
-
 }
 header a {
     color:inherit;
